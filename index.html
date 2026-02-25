@@ -1,105 +1,464 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Warteg</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="ban.css">
+  <title>Warung Makan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="CSs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
-    <!--Nav Bar-->
-    <nav class="navbar navbar-expand-lg" style="background-color: #0c3f79;" data-bs-theme="dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Warteg</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Promo</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Lokasi</a>
-        </li>
-      </ul>
+
+  <!--Nav Bar-->
+  <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #0c3f79;" data-bs-theme="dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <a class="navbar-brand me-auto" href="#">Warung Makan</a>
+        <ul class="navbar-nav">
+          <li class="nav-item me-3">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="#">Menu Makanan</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="#">Promo</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="#">Sosial</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Nav bar-->
+
+  <!--Banner-->
+  <div class="container-fluid banner d-flex align-items-center">
+    <div class="container">
+      <h1 class="text-light text-center display-4 mb-1">Warung Makan</h1>
+      <h2 class="text-light text-center display-5 mb-1">Mau Makanan Apa?</h2>
+      <div class="input-group input-group-lg">
+        <select class="form-control" id="inputGroupSelect04">
+          <option selected>Select Your Food</option>
+          <option value="1">Makanan Surabaya</option>
+          <option value="2">Makanan Bali</option>
+          <option value="3">Makanan Jakarta</option>
+        </select>
+        <button class="btn btn-outline-secondary text-light" type="button">Cari</button>
+      </div>
     </div>
   </div>
-</nav>
-<!--Nav bar-->
+  <!--Banner-->
 
-<!--Banner-->
-<div class="container-fluid banner d-flex align-items-center">
-  <div class="container">
-    <h1 class="text-light text-center display-4 mb-1">Warteg</h1>
-    <h2 class="text-light text-center display-5 mb-1">Mau Makanan Apa?</h2>
-    <div class="input-group input-group-lg">
-      <select class="form-control" id="inputGroupSelect04">
-        <option selected>Select Your Food</option>
-        <option value="1">Makanan Surabaya</option>    
-        <option value="2">Makanan Bali</option>
-        <option value="3">Makanan Jakarta</option>
-      </select>
-      <button class="btn btn-outline-secondary text-light" type="button">Cari</button>
-    </div>
-  </div>              
-</div>
-<!--Banner-->
+  <!--promo-->
+  <div class="container-fluid py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold">Promo Minggu Ini</h2>
 
-<!--promo-->
-<div class="container-fluid py-5">
-  <div class="container">
-    <h2 class="text-center fw-bold">Promo Minggu Ini</h2>
-    <div class="row mt5 justify-content-center">
-      <div class="col-md-3 hovered-card">
-        <div class="card">
-          <img src="https://asset.kompas.com/crops/W9FOUYORLTvRDtaXFiNRkFuE980=/129x0:858x486/1200x800/data/photo/2021/05/15/609fbcd2ed6d9.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Rujak Cingur dari Surabaya sekarang diskon 67%!!</h5>
-            <p class="card-text">Makanan tradisional khas Jawa Timur, terutama Surabaya, yang memadukan sayuran 
-              rebus, buah-buahan segar, dan irisan mulut (cingur) sapi rebus dengan bumbu petis udang kental</p>
-            <a href="#" class="btn btn-primary">Pesan</a>
-          </div>
-          </div>
-        </div>
-        
-         <div class="col-md-3 hovered-card">
-        <div class="card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeT8nl5rZFtsBfYxUsX7tbB2Xhqfdqq3Py0A&s" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Order Ayam Betutu 3 diskon 25%!!</h5>
-            <p class="card-text">hidangan khas Bali yang terkenal, terbuat dari daging ayam utuh (atau bebek) yang 
-              dibumbui secara melimpah dengan campuran rempah-rempah yang kaya, lalu dipanggang atau dikukus dalam 
-              pelepah pisang atau daun kelapa. </p>
-            <a href="#" class="btn btn-primary">Pesan</a>
-          </div>
+      <div class="row mt-5 justify-content-center">
+        <div class="col-lg-3 col-md-3 col-sm-6 hovered-card">
+          <div class="card">
+            <img
+              src="https://asset.kompas.com/crops/W9FOUYORLTvRDtaXFiNRkFuE980=/129x0:858x486/1200x800/data/photo/2021/05/15/609fbcd2ed6d9.jpg"
+              class="card-img-top" style="height: 210px; object-fit: cover;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Rujak Cingur dari Surabaya sekarang diskon 67%!!</h5>
+              <p class="card-text">Makanan tradisional khas Jawa Timur, terutama Surabaya, yang memadukan sayuran
+                rebus, buah-buahan segar, dan irisan mulut (cingur) sapi rebus dengan bumbu petis udang kental</p>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary">Pesan</a>
+              </div>
+            </div>
           </div>
         </div>
 
-         <div class="col-md-3 hovered-card">
-        <div class="card">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Kerak_telor_Betawi.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Beli Kerak Telor 2 diskon 50%!!(berakhir besok)</h5>
-            <p class="card-text">jajanan tradisional khas Betawi berupa omelet gurih yang terbuat dari beras ketan 
-              putih, telur ayam atau bebek, kelapa parut sangrai (serundeng), dan ebi (udang kering), dibumbui 
-              rempah serta dimasak hingga bagian luarnya garing dan dalamnya lembut, disajikan dengan taburan 
-              bawang merah goreng</p>
-            <a href="#" class="btn btn-primary">Pesan</a>
-          </div>
+        <div class="col-md-3 col-sm-6 hovered-card">
+          <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Kerak_telor_Betawi.jpg" class="card-img-top"
+              style="height: 210px; object-fit: cover;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Beli Kerak Telor 2 diskon 50%!!(berakhir besok)</h5>
+              <p class="card-text">jajanan tradisional khas Betawi berupa omelet gurih yang terbuat dari beras ketan
+                putih, telur ayam atau bebek, serundeng, udang kering, dibumbui
+                rempah serta dimasak hingga bagian luarnya garing dan dalamnya lembut, disajikan dengan taburan
+                bawang merah goreng</p>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary">Pesan</a>
+              </div>
+            </div>
           </div>
         </div>
-    </div>
+
+        <div class="col-md-3 col-sm-6 hovered-card">
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeT8nl5rZFtsBfYxUsX7tbB2Xhqfdqq3Py0A&s"
+              class="card-img-top" style="height: 210px; object-fit: cover;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Order Ayam Betutu 3 diskon 25%!!</h5>
+              <p class="card-text">hidangan khas Bali yang terkenal, terbuat dari daging ayam utuh (atau bebek) yang
+                dibumbui secara melimpah dengan campuran rempah-rempah yang kaya, lalu dipanggang atau dikukus dalam
+                pelepah pisang atau daun kelapa. </p>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary">Pesan</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
     </div>
   </div>
-</div>
-<!--promo-->
+  </div>
+  <!--promo-->
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <!--Service-->
+  <div class="container-fluid py-5" style="background-color: #0c2079;">
+    <div class="container">
+      <h2 class="text-light text-center mb-5">Layanan Kami</h2>
+      <div class="row justify-content-center">
+
+        <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+          <div class="d-flex justify-content-center">
+            <div class="icon-layan d-flex align-items-center justify-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="75%" fill="currentColor" class="bi bi-bicycle"
+                viewBox="0 0 16 16">
+                <path
+                  d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5m1.5 2.443-.508.814c.5.444.85 1.054.967 1.743h1.139zM8 9.057 9.598 6.5H6.402zM4.937 9.5a2 2 0 0 0-.487-.877l-.548.877zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53z" />
+              </svg>
+            </div>
+          </div>
+          <div class="mt-3 text-white text-center">
+            <H5>Pengiriman</H5>
+            <p>Anda dapat menikmati layanan kami tanpa datang ke lokasi kami
+            <p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+          <div class="d-flex justify-content-center">
+            <div class="icon-layan d-flex align-items-center justify-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50%" fill="currentColor" class="bi bi-fork-knife"
+                viewBox="0 0 16 16">
+                <path
+                  d="M13 .5c0-.276-.226-.506-.498-.465-1.703.257-2.94 2.012-3 8.462a.5.5 0 0 0 .498.5c.56.01 1 .13 1 1.003v5.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5zM4.25 0a.25.25 0 0 1 .25.25v5.122a.128.128 0 0 0 .256.006l.233-5.14A.25.25 0 0 1 5.24 0h.522a.25.25 0 0 1 .25.238l.233 5.14a.128.128 0 0 0 .256-.006V.25A.25.25 0 0 1 6.75 0h.29a.5.5 0 0 1 .498.458l.423 5.07a1.69 1.69 0 0 1-1.059 1.711l-.053.022a.92.92 0 0 0-.58.884L6.47 15a.971.971 0 1 1-1.942 0l.202-6.855a.92.92 0 0 0-.58-.884l-.053-.022a1.69 1.69 0 0 1-1.059-1.712L3.462.458A.5.5 0 0 1 3.96 0z" />
+              </svg>
+            </div>
+          </div>
+          <div class="mt-3 text-white text-center">
+            <H5>Makan di Tempat</H5>
+            <p>Anda bisa makan langsung ditempat kami dengan lingkungan yang nyaman
+            <p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+          <div class="d-flex justify-content-center">
+            <div class="icon-layan d-flex align-items-center justify-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50%" fill="currentColor" class="bi bi-basket3-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+              </svg>
+            </div>
+          </div>
+          <div class="mt-3 text-white text-center">
+            <H5>Bawa Pulang</H5>
+            <p>Anda dapat membawa pulang makanan anda yang sudah anda beli
+            <p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--Service-->
+
+  <!--Produk-->
+  <div class="container-fluid py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Terlaris</h2>
+      <div class="row">
+
+        <div class="col-sm-6 col-lg-3 mb-3">
+          <div class="card hovered-card">
+            <img
+              src="https://asset.kompas.com/crops/aShLyAiGmMhzDUPiQjF77-Jl1NA=/0x0:1000x667/1200x800/data/photo/2020/06/02/5ed5f39c7d8fe.jpg"
+              class="card-img-top" style="height: 210px; object-fit: cover;" alt="">
+            <div class="card-body text-center">
+              <h5 class="card-title text-info">Bakso</h5>
+              <p class="card-text">Bakso dengan extra pentol</p>
+              <h4 class="card-text text-info">10.000Rp</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 mb-3">
+          <div class="card hovered-card">
+            <img
+              src="https://image.idntimes.com/post/20220819/lauk-pendamping-nasi-kuning-paling-favorit-lauk-nasi-kuning-apa-saja-resep-nasi-kuning-tips-nasi-kuning-lauk-nasi-kuning-paling-enak-resep-lauk-nasi-kuning-mudah-9cde86371d7fc78c91ae80a6ffab250e-f70e9439deafc113c2b9efd9ee627bc4.jpg"
+              class="card-img-top" style="height: 210px; object-fit: cover;" alt="">
+            <div class="card-body text-center">
+              <h5 class="card-title text-info">Nasi Kuning</h5>
+              <p class="card-text">hidangan tradisional Indonesia berbahan dasar beras yang dimasak dengan santan,
+                kunyit (sebagai pewarna kuning alami), dan rempah-rempah seperti serai dan daun salam. Memiliki rasa
+                gurih, aroma harum, dan sering disajikan sebagai tumpeng dalam acara syukuran, pernikahan, atau ulang
+                tahun sebagai simbol kemakmuran dan kebahagiaan</p>
+              <h4 class="card-text text-info">15.000Rp</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 mb-3">
+          <div class="card hovered-card">
+            <img src="https://akcdn.detik.net.id/community/media/visual/2023/10/22/minuman-tradisional-15.jpeg?w=563"
+              class="card-img-top" style="height: 210px; object-fit: cover;" alt="">
+            <div class="card-body text-center">
+              <h5 class="card-title text-info">Es Cendol</h5>
+              <p class="card-text">Minuman Es Cendol yang sangat segar</p>
+              <h4 class="card-text text-info">7.000 Rp</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 mb-3">
+          <div class="card hovered-card">
+            <img src="https://app.juararesto.com/img/menu_folder/Menu_makanan_ice-milo_1672732694.jpg"
+              class="card-img-top" style="height: 210px; object-fit: cover;" alt="">
+            <div class="card-body text-center">
+              <h5 class="card-title text-info">Es Milo</h5>
+              <p class="card-text">Minum Es Milo yang rasanya sangat enak lezat!</p>
+              <h4 class="card-text text-info">7.000</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--Produk-->
+
+  <!--Riview-->
+  <div class="container-fluid py-5 testimony">
+    <div class="container">
+      <h2 class="text-center text-light mb-2">Coba Dengar Kata Pelanggan</h2>
+      <p class="text-center mb-5" style="color:#aeecff; font-size: 0.95">Kepuasan pelanggan adalah prioritas kami</p>
+      <DIv class="row g-4">
+
+        <div class="col-sm-6 col-lg-4">
+          <div class="testimony-card">
+            <div class="quote-icon"></div>
+            <h5>Enak!</h5>
+            <div class="author">Rango</div>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <p> Lorem Ipsum Makanannya enak sekali Lorem Ipsum.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <div class="testimony-card">
+            <div class="quote-icon"></div>
+            <h5>Tempatnya bersih</h5>
+            <div class="author">Vrena</div>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <p> Lorem ipsum dolor sit amet amet, tempat yang nyaman dan sangat bersih membuat betah berlama-lama.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <div class="testimony-card">
+            <div class="quote-icon"></div>
+            <h5>Minumannya bikin badan jadi seger</h5>
+            <div class="author">Tweer</div>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <p> Lorem ipsum dolor sit, adipisscing elit. minuman Es cendol rasa macha enak banget Ipsum.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <div class="testimony-card">
+            <div class="quote-icon"></div>
+            <h5>Jasa pengirimannya sangat cepat</h5>
+            <div class="author">Justin</div>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <p> Jorem Ipsum sit saat memesan pesanan, pesanannya cepat datang Lorem.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <div class="testimony-card">
+            <div class="quote-icon"></div>
+            <h5 class="text-uppercase">Oishii!!!</h5>
+            <div class="author">Luffy</div>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                class="bi bi-star-fill"></i>
+              <p> ロレム・イプサム、食べ物はとてもおいしいです、ロレム・イプサム。.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <div class="testimony-card">
+            <div class="quote-icon"></div>
+            <h5>Nasi Kuning</h5>
+            <div class="author">"Nasi Kuning Enjoyer"</div>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <p> Nasi Kuning.</p>
+            </div>
+          </div>
+        </div>
+
+      </DIv>
+    </div>
+  </div>
+  <!--Riview-->
+
+  <!--Reservasi-->
+  <div class="container-fluid py-5">
+    <div class="container">
+      <h2 class="text-center mb-2">Reservasi</h2>
+      <p class="text-center text-muted mb-5">Jangan sampai kehabisan tempat. Reservasi sekarang</p>
+
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+
+          <div class="mb-3">
+            <label class="form-label">Nama</label>
+            <input type="text" class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">No. kontak</label>
+            <input type="text" class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Jumlah Meja</label>
+            <input type="number" class="form-control">
+          </div>
+
+          <div class="d-grid">
+            <button class="btn btn-info text-light">Reservasi</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Reservasi-->
+
+  <!--Subcribe-->
+  <div class="container-fluid py-5 footer">
+    <div class="container">
+      <h5 class="text-center text-light mb-3">Ikuti akun sosial kami</h5>
+
+      <!--Medsos-->
+      <div class="d-flex justify-content-center mb-5" style="gap: 70px;">
+        <a href="https://web.facebook.com/" target="_blank" class="social-icon">
+          <i class="bi bi-facebook"></i>
+        </a>
+
+        <a href="https://www.instagram.com/kfcindonesia/" target="_blank" class="social-icon">
+          <i class="bi bi-instagram"></i>
+        </a>
+
+        <a href="https://x.com/search?q=Warung%20Makan&src=typed_query&f=top" target="_blank" class="social-icon">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+
+        <a href="https://www.youtube.com/@McDonaldsID/featured" target="_blank" class="social-icon">
+          <i class="bi bi-youtube"></i>
+        </a>
+      </div>
+      <!--Medsos-->
+
+      <!--Langganan-->
+      <h5 class="text-center text-light">Langganan</h5>
+
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Ketik email disini">
+            <button class="btn btn-info text-light">Langganan</button>
+          </div>
+        </div>
+      </div>
+      <!--Langganan-->
+
+    </div>
+  </div>
+  <!--Subcribe-->
+
+  <!--kaki-->
+  <footer class="text-light py-4" style="background-color: #242a60;">
+    <div class="container">
+
+      <div class="row text-center text-md-start">
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <h5 class="fw-bolder">Warung Makan</h5>
+          <p class="text-muted small">Tempat makan enak.</p>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <h6 class="fw-bold mb-3">Navigasi</h6>
+          <ul class="list-unstyled">
+            <li><a class="text-muted text-decoration-none" href="#">Promo</a></li>
+            <li><a class="text-muted text-decoration-none" href="#">Menu</a></li>
+            <li><a class="text-muted text-decoration-none" href="#">Reservasi</a></li>
+            <li><a class="text-muted text-decoration-none" href="#">Sosial</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h6 class="fw-bold mb-3">Kontak</h6>
+          <ul class="list-unstyled text-muted small">
+            <li class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Jl. Contoh No. 157, Majapahit</li>
+            <li class="mb-1"><i class="bi bi-telephone-fill me-2"></i>+62 891 9293 4569</li>
+            <li><i class="bi bi-envelope-fill me-2"></i>example@email.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="border-secondary mt-4 mb-3">
+      <p class="text-center text-muted small mb-0">
+        &copy; T. All Rights Reserved.
+      </p>
+
+    </div>
+  </footer>
+  <!--kaki-->
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
