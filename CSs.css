@@ -77,10 +77,14 @@
     background-color: #38335c;
 }
 
-.footer .social-icon .bi{
-    font-size: 1.6rem;
+.footer .social-icon{
     color: #fff;
+    font-size: 1.5rem;
     transition: .3s;
+}
+
+.footer .social-icon:hover{
+    transform: scale(1.5);
 }
 
 .footer .social-icon:hover .bi-facebook{
@@ -88,13 +92,18 @@
 }
 
 .footer .social-icon:hover .bi-instagram{
-    color: #db3493
+    color: #ff38a9
 }
 
 .footer .social-icon:hover .bi-twitter-x{
+    color: #000000;
+}
+
+.footer .social-icon:hover .bi-twitter{
     color: #1d9bf0;
 }
 
 .footer .social-icon:hover .bi-youtube{
     color: #ff0000;
 }
+
