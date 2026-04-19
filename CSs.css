@@ -1,6 +1,6 @@
 .banner {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(PARIS.PNG);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(PARIS.PNG);
     background-size: cover;
     background-position: center;
 }
@@ -11,6 +11,10 @@
     border: solid #fff 3px;
     border-radius: 50%;
     color: #ffff;
+}
+
+.card {
+    height: 100%;
 }
 
 .hovered-card {
@@ -62,7 +66,7 @@
 
 .testimony-card p {
     font-size: 0.88rem;
-    color:rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);
     line-height: 1.6;
     margin-bottom: 0;
 }
@@ -77,39 +81,108 @@
     background-color: #38335c;
 }
 
-.footer .social-icon{
+.footer .social-icon {
     color: #fff;
     font-size: 1.5rem;
     transition: .3s;
 }
 
-.footer .social-icon:hover{
+.footer .social-icon:hover {
     transform: scale(1.5);
 }
 
-.footer .social-icon:hover .bi-facebook{
+.footer .social-icon:hover .bi-facebook {
     color: #250be9;
 }
 
-.footer .social-icon:hover .bi-instagram{
+.footer .social-icon:hover .bi-instagram {
     color: #ff38a9
 }
 
-.footer .social-icon:hover .bi-twitter-x{
+.footer .social-icon:hover .bi-twitter-x {
     color: #000000;
 }
 
-.footer .social-icon:hover .bi-twitter{
+.footer .social-icon:hover .bi-twitter {
     color: #1d9bf0;
 }
 
-.footer .social-icon:hover .bi-youtube{
+.footer .social-icon:hover .bi-youtube {
     color: #ff0000;
 }
 
-.mekan-banner{
+.mekan-banner {
     height: 50vh;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(PARIS.PNG);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(PARIS.PNG);
     background-size: cover;
     background-position: center;
+}
+
+.promo-section {
+    animation: fadeSlideIn 0.4s ease both;
+}
+
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.promo-section.hovered-card {
+    opacity: 0;
+    animation: fadeSlideIn 0.4s ease forwards;
+}
+
+.promo-section.hovered-card:nth-child(1) {
+    animation-delay: 0.05s;
+}
+
+.promo-section .hovered-card:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.promo-section .hovered-card:nth-child(3) {
+    animation-delay: 0.15s;
+}
+
+.promo-section .hovered-card:nth-child(4) {
+    animation-delay: 0.2s;
+}
+
+.promo-section.hovered-card:nth-child(5) {
+    animation-delay: 0.25s;
+}
+
+.promo-section.hovered-card:nth-child(6) {
+    animation-delay: 0.3s;
+}
+
+.promo-section .hovered-card:nth-child(7) {
+    animation-delay: 0.35s;
+}
+
+.promo-section .hovered-card:nth-child(8) {
+    animation-delay: 0.45;
+}
+
+.filter-btn {
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.15s ease,
+        box-shadow 0.25s ease;
+}
+
+.filter-btn:active {
+    transform: scale(0.95);
+}
+
+.filter-btn.active {
+    box-shadow: 0 4px 14px rgba(7, 164, 255, 0.45);
 }
